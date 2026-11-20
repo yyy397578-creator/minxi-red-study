@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>红色研学地图 · 重走闽西长征路</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="badge">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.2 6.6.8-4.9 4.6 1.3 6.5L12 16.9 6.1 20l1.3-6.5L2.5 9l6.6-.8z"/></svg>
+      </span>
+      <span style="display:flex;flex-direction:column;line-height:1.25">
+        <span class="t">闽西研学</span>
+        <span class="s">重走闽西长征路 · 古田会议红色文化研学</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">首页</a>
+      <a href="map.html" class="active">研学地图</a>
+      <a href="resources.html">数字资源库</a>
+      <a href="education.html">研学教育</a>
+      <a href="volunteer.html">志愿共建</a>
+      <a href="data.html">数据中心</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <span class="kicker">STUDY MAP</span>
+    <h1>红色研学地图</h1>
+    <p>一图览尽古田会议会址群，点击点位查看详情、收听语音导览并完成打卡</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="map-stage">
+      <svg viewBox="0 0 800 450" role="img" aria-label="闽西古田红色研学地图">
+        <path d="M0,250 L110,150 L210,225 L330,110 L450,215 L580,105 L700,205 L800,150 L800,450 L0,450 Z" fill="#CDBE95" opacity="0.55"/>
+        <path d="M0,310 L130,215 L270,320 L420,205 L560,315 L690,230 L800,290 L800,450 L0,450 Z" fill="#B9A474" opacity="0.6"/>
+        <path d="M0,392 C160,362 300,418 460,392 C600,370 700,402 800,384 L800,450 L0,450 Z" fill="#9FB9C8" opacity="0.55"/>
+        <text x="36" y="52" font-size="22" font-weight="700" fill="#8F0A1F" letter-spacing="4">古田会议会址群 · 研学导览图</text>
+        <text x="36" y="76" font-size="12" fill="#7a6a4f" letter-spacing="2">福建省龙岩市上杭县古田镇</text>
+        <path d="M170,310 C240,275 290,235 330,208 C380,176 420,235 470,252 C505,264 520,282 540,295" fill="none" stroke="#8F0A1F" stroke-width="2.5" stroke-dasharray="7 7" opacity="0.65"/>
+        <g class="point checked" data-point data-name="古田会议会址" data-open="08:00-17:30" data-addr="古田镇溪背村" data-count="12860" data-desc="古田会议会址原为廖氏宗祠，1929年12月28日至29日，中国共产党红军第四军第九次代表大会在此召开，确立了思想建党、政治建军的原则，是党和人民军队建设史上的重要里程碑。">
+          <circle cx="330" cy="205" r="10"/>
+          <text x="330" y="230" text-anchor="middle">古田会议会址</text>
+        </g>
+        <g class="point checked" data-point data-name="古田会议纪念馆" data-open="08:30-17:00（周一闭馆）" data-addr="古田镇古田路" data-count="11320" data-desc="古田会议纪念馆系统展示古田会议的历史背景、会议过程与深远影响，馆藏文物史料丰富，配套AI数字讲解，是研学实践的核心场馆。">
+          <circle cx="430" cy="250" r="10"/>
+          <text x="430" y="275" text-anchor="middle">古田会议纪念馆</text>
+        </g>
+        <g class="point checked" data-point data-name="主席园" data-open="全天开放" data-addr="古田镇会址后山" data-count="9860" data-desc="主席园内翠竹环抱、庄严肃穆，设有毛泽东同志雕像，是缅怀伟人风范、开展敬献花篮等现场教学的重要场所。">
+          <circle cx="285" cy="150" r="10"/>
+          <text x="285" y="175" text-anchor="middle">主席园</text>
+        </g>
+        <g class="point unchecked" data-point data-name="协成店" data-open="08:30-17:00" data-addr="古田镇赖坊村" data-count="4520" data-desc="协成店是红四军政治部旧址。1930年1月，毛泽东同志在此写下《星星之火，可以燎原》，为中国革命指明了前进方向。">
+          <circle cx="250" cy="250" r="10"/>
+          <text x="250" y="275" text-anchor="middle">协成店</text>
+        </g>
+        <g class="point unchecked" data-point data-name="松荫堂" data-open="08:30-17:00" data-addr="古田镇八甲村" data-count="3980" data-desc="松荫堂为红四军前委机关暨政治部旧址，见证了古田会议筹备期间的一系列重要历史时刻，堂内保留当年办公场景原貌。">
+          <circle cx="385" cy="130" r="10"/>
+          <text x="385" y="155" text-anchor="middle">松荫堂</text>
+        </g>
+        <g class="point unchecked" data-point data-name="中兴堂" data-open="08:30-17:00" data-addr="古田镇八甲村" data-count="3650" data-desc="中兴堂是红四军司令部旧址，朱德等同志曾在此办公、居住，是了解人民军队早期建设历程的重要现场教学点。">
+          <circle cx="475" cy="175" r="10"/>
+          <text x="475" y="200" text-anchor="middle">中兴堂</text>
+        </g>
+        <g class="point unchecked" data-point data-name="红军桥" data-open="全天开放" data-addr="古田镇红军路" data-count="5240" data-desc="红军桥是当年红军战士往返古田的必经之桥，桥畔至今传颂着军民鱼水情深的动人故事，是体验"重走红军路"的起点。">
+          <circle cx="540" cy="295" r="10"/>
+          <text x="540" y="320" text-anchor="middle">红军桥</text>
+        </g>
+        <g class="point unchecked" data-point data-name="新时代文明实践中心" data-open="09:00-17:00" data-addr="古田镇集镇区" data-count="6120" data-desc="新时代文明实践中心集理论宣讲、AI科普教育、志愿服务于一体，配备数字沙盘与互动展陈，是现代化研学实践基地。">
+          <circle cx="170" cy="310" r="10"/>
+          <text x="170" y="335" text-anchor="middle">文明实践中心</text>
+        </g>
+      </svg>
+    </div>
+    <div class="map-legend">
+      <span><i class="sw sw-red"></i>已打卡点位</span>
+      <span><i class="sw sw-gray"></i>未打卡点位</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title"><span class="dot"></span>研学点位一览</h2>
+    <p class="section-sub">八个核心点位串联成线，构成"行走的思政课堂"</p>
+    <div class="grid grid-2">
+      <div class="card">
+        <h4 style="color:var(--red-deep)">古田会议会址 <span class="tag">已打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">1929年12月，古田会议在此召开，确立思想建党、政治建军原则。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="古田会议会址" data-open="08:00-17:30" data-addr="古田镇溪背村" data-count="12860" data-checked="1" data-desc="古田会议会址原为廖氏宗祠，1929年12月28日至29日，中国共产党红军第四军第九次代表大会在此召开，确立了思想建党、政治建军的原则，是党和人民军队建设史上的重要里程碑。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">古田会议纪念馆 <span class="tag">已打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">馆藏文物史料丰富，配套AI数字讲解，系统呈现古田会议精神。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="古田会议纪念馆" data-open="08:30-17:00（周一闭馆）" data-addr="古田镇古田路" data-count="11320" data-checked="1" data-desc="古田会议纪念馆系统展示古田会议的历史背景、会议过程与深远影响，馆藏文物史料丰富，配套AI数字讲解，是研学实践的核心场馆。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">主席园 <span class="tag">已打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">翠竹环抱、庄严肃穆，敬献花篮、缅怀伟人风范的现场教学点。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="主席园" data-open="全天开放" data-addr="古田镇会址后山" data-count="9860" data-checked="1" data-desc="主席园内翠竹环抱、庄严肃穆，设有毛泽东同志雕像，是缅怀伟人风范、开展敬献花篮等现场教学的重要场所。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">协成店 <span class="tag gold">待打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">毛泽东同志在此写下《星星之火，可以燎原》。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="协成店" data-open="08:30-17:00" data-addr="古田镇赖坊村" data-count="4520" data-desc="协成店是红四军政治部旧址。1930年1月，毛泽东同志在此写下《星星之火，可以燎原》，为中国革命指明了前进方向。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">松荫堂 <span class="tag gold">待打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">红四军前委机关暨政治部旧址，保留当年办公场景原貌。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="松荫堂" data-open="08:30-17:00" data-addr="古田镇八甲村" data-count="3980" data-desc="松荫堂为红四军前委机关暨政治部旧址，见证了古田会议筹备期间的一系列重要历史时刻，堂内保留当年办公场景原貌。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">中兴堂 <span class="tag gold">待打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">红四军司令部旧址，朱德等同志曾在此办公、居住。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="中兴堂" data-open="08:30-17:00" data-addr="古田镇八甲村" data-count="3650" data-desc="中兴堂是红四军司令部旧址，朱德等同志曾在此办公、居住，是了解人民军队早期建设历程的重要现场教学点。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">红军桥 <span class="tag gold">待打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">红军往返古田的必经之桥，传颂着军民鱼水情深的故事。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="红军桥" data-open="全天开放" data-addr="古田镇红军路" data-count="5240" data-desc="红军桥是当年红军战士往返古田的必经之桥，桥畔至今传颂着军民鱼水情深的动人故事，是体验重走红军路的起点。">查看详情</button>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--red-deep)">新时代文明实践中心 <span class="tag gold">待打卡</span></h4>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 10px">集理论宣讲、AI科普教育、志愿服务于一体的现代化研学基地。</p>
+        <button class="btn btn-line btn-sm" data-point data-name="新时代文明实践中心" data-open="09:00-17:00" data-addr="古田镇集镇区" data-count="6120" data-desc="新时代文明实践中心集理论宣讲、AI科普教育、志愿服务于一体，配备数字沙盘与互动展陈，是现代化研学实践基地。">查看详情</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal-back" id="pointModal">
+  <div class="modal">
+    <div class="modal-head bg-gutian">
+      <h3 id="pmTitle">研学点位</h3>
+      <button class="modal-close" data-close aria-label="关闭">✕</button>
+    </div>
+    <div class="modal-body">
+      <h4>点位简介</h4>
+      <p id="pmDesc">点击地图上的点位，查看详细介绍。</p>
+      <div class="info-row">
+        <span class="it">开放时间：<b id="pmOpen">—</b></span>
+        <span class="it">地址：<b id="pmAddr">—</b></span>
+        <span class="it">已打卡：<b id="pmCount">0</b> 人</span>
+      </div>
+      <h4>语音导览</h4>
+      <div class="player">
+        <button class="play" id="pmPlay" aria-label="播放">▶</button>
+        <div class="bar"><i id="pmBar"></i></div>
+        <span class="tm" id="pmTime">00:00 / 03:26</span>
+      </div>
+      <button class="btn btn-red btn-block" id="pmCheck">立即打卡</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>重走闽西长征路</h4>
+        <p>依托古田会议会址群红色资源，融合AI科普与数字技术，打造"行走的思政课堂"，让红色基因在闽西大地代代相传。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <a href="index.html">网站首页</a>
+        <a href="map.html">红色研学地图</a>
+        <a href="resources.html">数字资源库</a>
+        <a href="education.html">研学教育专区</a>
+      </div>
+      <div>
+        <h4>共建联系</h4>
+        <p>地址：福建省龙岩市上杭县古田镇<br>研学热线：0597-000-0000<br>邮箱：yanxue@minxi-red.cn</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span class="js-year">2026</span> 闽西红色研学数字平台 · 古田会议永放光芒</div>
+  </div>
+</footer>
+
+</body>
+</html>

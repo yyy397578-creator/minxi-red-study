@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研学教育专区 · 重走闽西长征路</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="badge">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.2 6.6.8-4.9 4.6 1.3 6.5L12 16.9 6.1 20l1.3-6.5L2.5 9l6.6-.8z"/></svg>
+      </span>
+      <span style="display:flex;flex-direction:column;line-height:1.25">
+        <span class="t">闽西研学</span>
+        <span class="s">重走闽西长征路 · 古田会议红色文化研学</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">首页</a>
+      <a href="map.html">研学地图</a>
+      <a href="resources.html">数字资源库</a>
+      <a href="education.html" class="active">研学教育</a>
+      <a href="volunteer.html">志愿共建</a>
+      <a href="data.html">数据中心</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <span class="kicker">EDUCATION</span>
+    <h1>研学教育专区</h1>
+    <p>精品课程、视频课堂、答题闯关、我的证书——一站式完成闽西红色研学线上学习</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-tab="tabCourse">精品课程</button>
+      <button class="tab" data-tab="tabLesson">视频课堂</button>
+      <button class="tab" data-tab="tabQuiz">答题闯关</button>
+      <button class="tab" data-tab="tabCert">我的证书</button>
+    </div>
+
+    <div class="tab-panel active" id="tabCourse">
+      <div class="course-list">
+        <div class="course-item">
+          <div class="thumb bg-gutian">专题课</div>
+          <div class="body">
+            <h4>《古田会议永放光芒》专题课</h4>
+            <p>系统讲授古田会议的历史背景、会议内容与时代价值，配套现场教学手册。</p>
+            <div class="meta"><span class="tag">8学时</span><span class="tag gold">党员干部·中小学生</span></div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="thumb bg-jiuzhi">实践课</div>
+          <div class="body">
+            <h4>《重走长征路·闽西段》实践课</h4>
+            <p>以红军桥为起点开展行进式教学，在行走中感悟长征精神。</p>
+            <div class="meta"><span class="tag">12学时</span><span class="tag gold">中小学生</span></div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="thumb bg-shijian">通识课</div>
+          <div class="body">
+            <h4>《红色闽西·苏区记忆》通识课</h4>
+            <p>讲述闽西苏区的创建与发展历程，读懂"二十年红旗不倒"的闽西答卷。</p>
+            <div class="meta"><span class="tag">6学时</span><span class="tag gold">普通群众</span></div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="thumb bg-gutian">素养课</div>
+          <div class="body">
+            <h4>《AI+红色文化》数字素养课</h4>
+            <p>体验AI修复老照片、AI数字讲解员等新技术，探索红色文化传播新方式。</p>
+            <div class="meta"><span class="tag">4学时</span><span class="tag gold">中小学生·志愿者</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tabLesson">
+      <div class="lesson-body">
+        <div class="lesson-video bg-jiuzhi">
+          <button class="playbig" aria-label="播放视频">▶</button>
+          <span style="position:absolute;bottom:12px;right:14px;font-size:12px;background:rgba(0,0,0,.35);padding:2px 10px;border-radius:12px">32:16</span>
+        </div>
+        <div class="lesson-content">
+          <h3 style="color:var(--red-deep);margin-bottom:10px">视频课堂 · 《古田会议：思想建党的里程碑》</h3>
+          <p><b>教学目标：</b>了解古田会议召开的历史背景，理解思想建党、政治建军原则的深刻内涵，感悟老一辈革命家的初心使命。</p>
+          <p><b>教学重点：</b>古田会议决议的核心内容及其对新时代党的建设的启示。</p>
+          <p><b>教学过程：</b></p>
+          <p>1. 情境导入（5分钟）：观看会址影像，思考问题"为什么是古田"。</p>
+          <p>2. 专题讲授（20分钟）：结合视频课程，梳理会议召开的时代背景与主要议程。</p>
+          <p>3. 互动研讨（15分钟）：分组讨论"思想建党在今天的意义"，推选代表发言。</p>
+          <p>4. 总结提升（5分钟）：教师点评，布置研学打卡任务。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tabQuiz">
+      <p id="quizScore" style="margin:4px 0 14px;color:var(--ink-soft);font-size:14px">请作答，共 3 题。点击选项即可判定对错并查看解析。</p>
+      <div class="quiz-q">
+        <div class="q-title">1. 古田会议召开的时间是？</div>
+        <span class="opt">A. 1927年8月</span>
+        <span class="opt" data-c="1">B. 1929年12月</span>
+        <span class="opt">C. 1935年1月</span>
+        <span class="opt">D. 1937年7月</span>
+        <div class="explain">解析：1929年12月28日至29日，中国共产党红军第四军第九次代表大会在福建上杭古田召开，史称"古田会议"。</div>
+      </div>
+      <div class="quiz-q">
+        <div class="q-title">2. 古田会议确立的根本原则是？</div>
+        <span class="opt" data-c="1">A. 思想建党、政治建军</span>
+        <span class="opt">B. 武装夺取政权</span>
+        <span class="opt">C. 以土地革命为中心</span>
+        <span class="opt">D. 建立统一战线</span>
+        <div class="explain">解析：古田会议确立了思想建党、政治建军的原则，是党和人民军队建设史上的重要里程碑。</div>
+      </div>
+      <div class="quiz-q">
+        <div class="q-title">3. 《星星之火，可以燎原》是毛泽东同志在闽西哪处旧址写就的？</div>
+        <span class="opt">A. 松荫堂</span>
+        <span class="opt">B. 中兴堂</span>
+        <span class="opt" data-c="1">C. 协成店</span>
+        <span class="opt">D. 主席园</span>
+        <div class="explain">解析：1930年1月，毛泽东同志在古田协成店写下《星星之火，可以燎原》，为中国革命指明了前进方向。</div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tabCert">
+      <div class="cert">
+        <div class="cert-frame">
+          <div style="font-size:26px;letter-spacing:8px;color:var(--red-deep);font-weight:700">结 业 证 书</div>
+          <p style="margin-top:20px;font-size:15px">李同学：</p>
+          <p style="font-size:14px;color:var(--ink-soft);margin-top:6px">你已完成"闽西红色研学线上课程"全部 24 学时的学习内容，<br>经考核成绩合格，特发此证，以资鼓励。</p>
+          <p style="margin-top:18px;font-size:13px;color:var(--ink-soft)">证书编号：MXYX-2026-01086　　发证日期：2026年10月28日</p>
+          <div class="seal">闽西红色研学<br>专用章</div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:14px;font-size:13px;color:var(--ink-soft)">完成全部课程并通过答题闯关，即可获得电子结业证书。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>重走闽西长征路</h4>
+        <p>依托古田会议会址群红色资源，融合AI科普与数字技术，打造"行走的思政课堂"，让红色基因在闽西大地代代相传。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <a href="index.html">网站首页</a>
+        <a href="map.html">红色研学地图</a>
+        <a href="resources.html">数字资源库</a>
+        <a href="education.html">研学教育专区</a>
+      </div>
+      <div>
+        <h4>共建联系</h4>
+        <p>地址：福建省龙岩市上杭县古田镇<br>研学热线：0597-000-0000<br>邮箱：yanxue@minxi-red.cn</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span class="js-year">2026</span> 闽西红色研学数字平台 · 古田会议永放光芒</div>
+  </div>
+</footer>
+
+</body>
+</html>
